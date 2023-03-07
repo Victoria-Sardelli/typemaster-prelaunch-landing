@@ -1,4 +1,16 @@
 /* || GENERAL */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --dark-orange: #F16718;
     --light-orange: #FF9B62;
@@ -10,6 +22,14 @@
 
 html {
     font-family: 'Barlow', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: var(--gray);
 }
 
 h1,
@@ -35,18 +55,11 @@ h3 {
     line-height: 1.75rem;
 }
 
-body {
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.625rem;
-    color: var(--gray);
-}
-
-
 /* || BUTTONS */
 
 .preorder-btn {
     text-transform: capitalize;
+    border: none;
     border-radius: 0.5rem;
 }
 
