@@ -1,0 +1,75 @@
+/* || GENERAL */
+:root {
+    --dark-orange: #F16718;
+    --light-orange: #FF9B62;
+    --dark-gray: #162542;
+    --gray: #7B8BAD;
+    --light-gray: #E8EFF2;
+    --white: #FFFFFF;
+}
+
+html {
+    font-family: 'Barlow', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+    text-transform: capitalize;
+    color: var(--dark-gray);
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+}
+
+body {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: var(--gray);
+}
+
+
+/* || BUTTONS */
+
+.preorder-btn {
+    text-transform: capitalize;
+    border-radius: 0.5rem;
+}
+
+.preorder-btn--orange {
+    background-color: var(--dark-orange);
+    color: var(--white);
+}
+
+.preorder-btn--orange:hover {
+    background-color: var(--light-orange);
+}
+
+.preorder-btn--gray {
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+}
+
+.preorder-btn--gray:hover {
+    background-color: var(--dark-gray);
+    color: var(--white);
+}
+
+/* || HERO */
+.release-date-info {
+    text-transform: capitalize;
+}
