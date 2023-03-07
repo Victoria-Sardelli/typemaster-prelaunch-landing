@@ -8,7 +8,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
   
@@ -17,69 +17,94 @@
 <body>
   <header>
     <img src="assets/shared/logo.svg" alt="logo">
-    <button class="preorder-btn preorder-btn--gray">Pre-order now</button>
+    <button class="preorder-btn preorder-btn--gray"><strong>Pre-order now</strong></button>
   </header>
 
   <main>
     <div class="hero">
       <div class="hero__details">
-        <h1>Typemaster keyboard</h1>
-        <p>
+        <h1 class="hero__title">Typemaster keyboard</h1>
+        <p class="hero__description">
           Improve your productivity and gaming without breaking the bank. Upgrade to a high quality 
           mechanical typing experience.
         </p>
-        <button class="preorder-btn preorder-btn--orange">Pre-order now</button>
-        <p class="release-date-info"><strong>Release on 5/27</strong></p>
+        <div class="hero__cta">
+          <button class="preorder-btn preorder-btn--orange"><strong>Pre-order now</strong></button>
+          <p class="release-date-info"><strong>Release on 5/27</strong></p>
+        </div>
       </div>
-      <div class="hero__img">
-        <img src="assets/mobile/image-keyboard.jpg" alt="keyboard">
+      <div class="hero__img-container">
+        <picture class="hero__img-picture">
+          <source media="(min-width: 1025px)" srcset="assets/desktop/image-keyboard.jpg">
+          <source media="(min-width: 768px) and (max-width: 1024px)" srcset="assets/tablet/image-keyboard.jpg">
+          <img class="hero__img" src="assets/mobile/image-keyboard.jpg" alt="keyboard">
+        </picture>
       </div>
     </div>
   
     <div class="product-summary">
-      <div class="product-summary__img">
-        <img src="assets/mobile/image-phone-and-keyboard.jpg" alt="keyboard and phone">
-        <img src="assets/mobile/image-glass-and-keyboard.jpg" alt="keyboard and glass">
+      <div class="product-summary__img-container product-summary__img-container--left">
+        <div class="product-summary__img-inner-container">
+          <picture class="product-summary__picture">
+            <source media="(min-width: 1025px)" srcset="assets/desktop/image-phone-and-keyboard.jpg">
+            <source media="(min-width: 768px) and (max-width: 1024px)" srcset="assets/tablet/image-phone-and-keyboard.jpg">
+            <img class="product-summary__img product-summary__img--left" src="assets/mobile/image-phone-and-keyboard.jpg" alt="keyboard and phone">
+          </picture>
+        </div>
       </div>
-      <div class="product-summary__details">
-        <h2>Mechanical wireless keyboard</h2>
-        <p>The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety 
-          of switches and keycaps, along with reliable wireless connectivity.</p>
+      <div class="product-summary__img-container product-summary__img-container--right">
+        <picture class="product-summary__picture">
+          <source media="(min-width: 1025px)" srcset="assets/desktop/image-glass-and-keyboard.jpg">
+          <source media="(min-width: 768px) and (max-width: 1024px)" srcset="assets/tablet/image-glass-and-keyboard.jpg">
+          <img class="product-summary__img" src="assets/mobile/image-glass-and-keyboard.jpg" alt="keyboard and glass">
+        </picture>
       </div>
+      
+      <h2 class="product-summary__title">Mechanical wireless keyboard</h2>
+      <p class="product-summary__desc">The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety 
+        of switches and keycaps, along with reliable wireless connectivity.</p>
     </div>
 
     <article class="features">
       <section class="feature">
-        <img src="assets/shared/icon-compatible.svg" alt="computer icon">
-        <h3>Highly compatible</h3>
+        <div class="feature__icon">
+          <img src="assets/shared/icon-compatible.svg" alt="computer icon">
+        </div>
+        <h3 class="feature__title">Highly compatible</h3>
         <p>Easy to use and works well with all major computer brands, gaming consoles and mobile devices. 
           Plug & play, no installation or driver needed.</p>
       </section>
 
       <section class="feature">
-        <img src="assets/shared/icon-bluetooth.svg" alt="bluetooth icon">
-        <h3>Wireless with bluetooth</h3>
+        <div class="feature__icon">
+          <img src="assets/shared/icon-bluetooth.svg" alt="bluetooth icon">
+        </div>
+        <h3 class="feature__title">Wireless<br />with bluetooth</h3>
         <p>Powerful 2.4G RF technology allows you to connect the cordless keyboard from up to 30ft away. 
           Simply plug the unifying receiver into your computer.</p>
       </section>
 
       <section class="feature">
-        <img src="assets/shared/icon-battery.svg" alt="battery icon">
-        <h3>High capacity battery</h3>
+        <div class="feature__icon">
+          <img src="assets/shared/icon-battery.svg" alt="battery icon">
+        </div>
+        <h3 class="feature__title">High capacity battery</h3>
         <p>Equipped with a long-lasting built-in battery, you’ll never have to spend a dime on replaceable ones. 
           Enjoy 40 hours of usage time between charges.</p>
       </section>
 
       <section class="feature">
-        <img src="assets/shared/icon-light.svg" alt="lightbulb icon">
-        <h3>RGB backlit modes</h3>
+        <div class="feature__icon">
+          <img src="assets/shared/icon-light.svg" alt="lightbulb icon">
+        </div>
+        <h3 class="feature__title">RGB backlit modes</h3>
         <p>Choose from 4 backlight brightness levels and adjustable breathing speed. Each key glows intensely in the dark and helps
           you type in low light conditions.</p>
       </section>
     </article>  
   </main>
   <footer>
-    <b>Typemaster 2021</b>| All Rights Reserved
+    <b>Typemaster 2021</b> | All Rights Reserved
   </footer>
 </body>
 </html>
