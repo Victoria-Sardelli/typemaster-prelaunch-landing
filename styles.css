@@ -229,22 +229,112 @@ footer {
 
 /* || TABLET STYLES */
 @media (min-width: 768px) and (max-width: 1024px) {
+    
+    header {
+        margin: 2.5rem 2.5rem 3.875rem 2.5rem;
+    }
+
+    .preorder-btn {
+        padding: 1rem 1.625rem;
+        min-width: 10.938rem;
+        min-height: 3.625rem;
+    }
+
     .hero {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .hero__details {
+        margin: 0 0 0 2.428rem;
+    }
+
+    .hero__description {
+        margin: 2.125rem 0 2.438rem 0;
+    }
+
+    .hero__cta {
+        gap: 2.313rem;
+    }
+
+    .hero__img {
+        margin-left: 4.313rem;
+    }
+
+    .product-summary {
+        padding: 0 2.5rem 0 2.438rem;
+        text-align: left;
+        grid-template-areas: 
+            "left-img right-img right-img"
+            "title desc desc";
+    }
+
+    .product-summary__img-container {
+        max-height: 20rem;
+    }
+
+    .product-summary__img-inner-container {
+        left: 0;
+    }
+    
+    .product-summary__img-container--right {
+        padding-left: 0;
+        padding-right: 0;
+        width: 27.813rem;
+    }
+
+    .product-summary__img-container--left {
+        width: 13.375rem;
+        margin-right: 1.875rem
+    }
+
+    .product-summary__img--left {
+        object-fit: fill;
+    }
+
+    .product-summary__title {
+        margin: 4.5rem 0 0 0;
+    }
+
+    .product-summary__desc { 
+        margin: 4.5rem 0 0 3rem;
+    }
+
+    .features {
+        row-gap: 4.5rem;
+        column-gap: 4.313rem;
+        text-align: left;
+        margin: 8.875rem 6.063rem 0 2.438rem;
+    }
+
+    .feature {
+        padding: 0 2.15em 0 0;
+    }
+
+    .feature__icon {
+        margin: initial;
+    }
+    
+    .feature__title {
+        padding: 0 1.75rem 0 0;
+    }
+    
+    footer {
+        margin: 8.875rem 0 2.688rem 0;
     }
 }
 
 /* || DESKTOP STYLES */
 @media (min-width: 1025px) {
 
-    body {
-        font-size: 1.125rem;
-        line-height: 1.625rem;
-    }
-
     header {
         margin: 3.438rem 10.313rem 5.188rem 10.313rem;
+    }
+
+    .preorder-btn {
+        padding: 1rem 1.625rem;
+        min-width: 10.938rem;
+        min-height: 3.625rem;
     }
 
     .hero {
@@ -267,6 +357,7 @@ footer {
     }
 
     .hero__description {
+        font-size: 1.125rem;
         margin: 1.5rem 0 2.5rem 0;
     }
 
