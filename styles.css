@@ -414,7 +414,6 @@ footer {
 
     .gray-square--product-summary {
         grid-area: gray-ps;
-        max-height: 30rem;
     }
 
     .product-summary__img-container {
