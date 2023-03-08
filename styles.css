@@ -83,7 +83,10 @@ header {
 .hero {
     margin-bottom: 1.5rem;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "details"
+        "image";
+
 }
 
 .hero__details {
@@ -130,6 +133,10 @@ header {
       "left-img right-img right-img"
       "title title title"
       "desc desc desc";
+}
+
+.gray-square {
+    display: none;
 }
 
 .product-summary__img-container {
@@ -337,13 +344,35 @@ footer {
         min-height: 3.625rem;
     }
 
+    main {
+        overflow: hidden;
+    }
+
+    .gray-square {
+        display: initial;
+        background-image: url("assets/shared/pattern-square.svg");
+        background-size: cover;
+        border-radius: 1.25rem;
+        width: 15.938rem;
+    }
+    
     .hero {
-        margin: 0 10.313rem 1.875rem 10.313rem;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
+        margin: 0 0 1.875rem 0;
+        grid-template-areas:
+            ". details details image image gray-hero"
+            ". details details image image .";
+        gap: 1.875rem;
+        position: relative;
+        right: -8.438rem;
+    }
+
+    .gray-square--hero {
+        grid-area: gray-hero;
+        height: 15rem;
     }
 
     .hero__details {
+        grid-area: details;
         margin: 0 7.813rem 0 0;
         display: flex;
         flex-direction: column;
@@ -361,16 +390,30 @@ footer {
         margin: 1.5rem 0 2.5rem 0;
     }
 
+    .hero__img-container {
+        grid-area: image;
+        width: 33.75rem;
+    }
+
     .hero__img {
         max-width: 33.75rem;
+        margin: 0;
     }
 
     .product-summary {
-        padding: 0 10.313rem;
+        padding: 0 10.313rem 0 0;
         text-align: left;
         grid-template-areas: 
-          "left-img right-img right-img title"
-          "left-img right-img right-img desc";
+          ". left-img right-img right-img title"
+          "gray-ps left-img right-img right-img desc";
+        gap: 1.875rem;
+        position: relative;
+        left: -8.438rem;
+    }
+
+    .gray-square--product-summary {
+        grid-area: gray-ps;
+        max-height: 30rem;
     }
 
     .product-summary__img-container {
@@ -390,7 +433,6 @@ footer {
 
     .product-summary__img-container--left {
         width: 15.938rem;
-        margin-right: 1.875rem
     }
 
     .product-summary__img--left {
