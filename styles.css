@@ -202,7 +202,7 @@ header {
     gap: 4rem;
     text-align: center;
     margin: 6.875rem 1.5rem 0 1.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(15.9375rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15.9375rem, 1fr));
 }
 
 .feature__icon {
