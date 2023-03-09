@@ -350,7 +350,7 @@ footer {
     }
     
     .hero {
-        margin: 0 0 1.875rem 0;
+        margin: 0;
         grid-template-areas:
             "details details image image gray-hero"
             "details details image image .";
