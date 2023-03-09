@@ -367,10 +367,10 @@ footer {
 
     .hero__details {
         grid-area: details;
-        margin: 0 0 0 0.9375rem;
+        margin: 0 0 8.625rem 0.9375rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: end;
         max-width: 27.813rem;
     }
 
